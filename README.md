@@ -1,5 +1,15 @@
 # 💬 Flutter Chat Application (`course_third_app`)
 
+<div align="center">
+
+![App Header](https://img.shields.io/badge/Architecture-16--bit-red?style=for-the-badge&logo=cpu-z)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![Assembler](https://img.shields.io/badge/8086-Assembly-green?style=for-the-badge&logo=intel)
+![Ads](https://img.shields.io/badge/Ads-AdMob_Integrated-orange?style=for-the-badge&logo=google-ads)
+![IAP](https://img.shields.io/badge/Monetization-In--App_Purchases-gold?style=for-the-badge&logo=google-play)
+
+</div>
+
 Welcome to the repository for **`course_third_app`**, a feature-rich, modern real-time chat application built using **Flutter** and **Dart**, powered by **Firebase** for backend services and authentication.
 
 ---
