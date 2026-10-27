@@ -1,5 +1,4 @@
-import 'package:course_third_app/components/custom_text_field.dart';
-import 'package:course_third_app/screens/welcome_screen.dart';
+import 'package:course_third_app/screens/signin_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(
         useMaterial3: true
       ),
-      home: WelcomeScreen(),
+      home: SignInScreen(),
     );
   }
 }

@@ -20,9 +20,11 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+
       obscureText: widget.isPassword! ? isHidden : false,
       validator: widget.validator,
       decoration: InputDecoration(
+        labelStyle: TextStyle(fontWeight: FontWeight.w500,fontFamily: 'times'),
         labelText: widget.labelText,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(6),
@@ -32,6 +34,19 @@ class _CustomTextFieldState extends State<CustomTextField> {
           borderRadius: BorderRadius.circular(10),
           borderSide: BorderSide(color: Colors.purple.shade600, width: 3),
         ),
+
+
+
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(6),
+          borderSide: BorderSide(color: Colors.red.shade300, width: 1),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(10),
+          borderSide: BorderSide(color: Colors.red.shade600, width: 3),
+        ),
+
+
         suffixIcon: widget.isPassword!
             ? IconButton(
                 icon: Icon(isHidden ? Icons.visibility : Icons.visibility_off),
