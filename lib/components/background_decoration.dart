@@ -20,9 +20,11 @@ class BackgroundDecoration extends StatelessWidget {
       child: Scaffold(
 
         backgroundColor: Colors.transparent,
-    body: Padding(
-      padding: const EdgeInsets.all(10),
-      child: child,
+    body: Center(
+      child: Padding(
+        padding: const EdgeInsets.all(10),
+        child: child,
+      ),
     ),
 
       ),
