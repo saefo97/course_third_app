@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   final String label;
+ final bool isLoading;
  final void Function()? onPressed;
-  const CustomButton({super.key, required this.label, this.onPressed});
+  const CustomButton({super.key, required this.label, this.onPressed, required this.isLoading});
 
   @override
   Widget build(BuildContext context) {
@@ -24,11 +25,17 @@ class CustomButton extends StatelessWidget {
             end: AlignmentGeometry.bottomRight,
           )
         ),
-        child: MaterialButton(onPressed: onPressed,
+        child: MaterialButton(onPressed:isLoading? (){} : onPressed,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusGeometry.circular(12)
           ),
-        child: Text(label,style: TextStyle(fontSize: 25,fontWeight: FontWeight.w500,fontFamily: 'times'),),
+        child:
+        isLoading ?   CircularProgressIndicator(color: Colors.white,
+
+
+        )   :
+
+        Text(label,style: TextStyle(fontSize: 25,fontWeight: FontWeight.w500,fontFamily: 'times'),),
         
         ),
       ),
